@@ -14,14 +14,6 @@ bool Port::set_value(String val)
 {
 	String* splitted_strings;
 	size_t size = 0;
-
-	/* Splitting val with delimiter - 
-	Port Rule = 2-50 
-	
-	substrs[0]=2
-	substrs[1]=50
-	*/
-	
 	val.split("-", &splitted_strings, &size);
 	/* Check if Valid port size */
 	if (size != VALID_SIZE)
